@@ -98,7 +98,7 @@ Notes:
 Config.Garages = {
     {
         name = "LSPD Vehicles",
-        allowedRoles = { "LEO" },
+        allowedRoles = { "LSPD" },
         interactions = {
             {
                 -- Station identifier for this interaction (used to restrict vehicles to stations)
