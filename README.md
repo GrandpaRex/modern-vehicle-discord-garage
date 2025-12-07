@@ -1,5 +1,8 @@
 ### Developer Documentation — Discord Role Based Garage with Showcase
 
+#### Video Demonstration
+https://www.youtube.com/watch?v=go4ze5zZGZg
+
 #### Overview
 This resource provides a secure, Discord role–gated vehicle garage with a 3D showcase and scripted camera. It supports per‑garage interactions and spawn/delete points, vehicle divisions (sub‑menus), per‑vehicle role restrictions, per‑station vehicle availability, and rich vehicle customization (livery, extras, mods, colors, tint, dirt). Plates are generated server‑side with a global or per‑vehicle format.
 
