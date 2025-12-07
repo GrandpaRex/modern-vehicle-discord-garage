@@ -163,10 +163,10 @@ Config.Garages = {
 ### Events and Integrations
 
 #### Server Internal Events
-- `moderngarage:spawned (plate:string, garageId:number)`
-  - Fired after authorizing client spawn; can be used for logging/cooldowns.
+- `moderngarage:spawned (netId:number, plate:stringm, source:number)`
+  - Emitted when a player spawns a vehicle.
 - `moderngarage:deleted (netId:number, plate:string, source:number)`
-  - Re‑emitted when a player deletes a vehicle via a delete point.
+  - Emitted when a player deletes a vehicle via a delete point.
 
 ---
 
