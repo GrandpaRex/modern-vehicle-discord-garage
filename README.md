@@ -163,9 +163,9 @@ Config.Garages = {
 ### Events and Integrations
 
 #### Server Internal Events
-- `mygarage:spawned (plate:string, garageId:number)`
+- `moderngarage:spawned (plate:string, garageId:number)`
   - Fired after authorizing client spawn; can be used for logging/cooldowns.
-- `mygarage:deleted (netId:number, plate:string, source:number)`
+- `moderngarage:deleted (netId:number, plate:string, source:number)`
   - Re‑emitted when a player deletes a vehicle via a delete point.
 
 ---
@@ -210,7 +210,7 @@ Config.Garages = {
 ### Delete Zones
 - If an interaction defines `deletes`, the client draws red markers there.
 - When the player (driver seat) is within 2.0 units, a help prompt appears: `Press ~INPUT_CONTEXT~ to delete this vehicle`.
-- On E press: screen fades out, vehicle is deleted, and the server event `mygarage:deleted` is emitted with `netId` and `plate`.
+- On E press: screen fades out, vehicle is deleted, and the server event `moderngarage:deleted` is emitted with `netId` and `plate`.
 
 ---
 
@@ -233,7 +233,7 @@ Config.Garages = {
 ### Extending
 - Add more divisions or interactions per garage as needed.
 - Add per‑vehicle liveries/extras/mods/colors to standardize fleet setups.
-- Hook `mygarage:vehicleSpawned` and `mygarage:deleted` on the server to integrate with fuel, MDT, or persistence systems.
+- Hook `moderngarage:vehicleSpawned` and `moderngarage:deleted` on the server to integrate with fuel, MDT, or persistence systems.
 
 ---
 
