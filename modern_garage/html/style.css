@@ -1,0 +1,78 @@
+body {
+    font-family: Arial;
+    background: rgba(0,0,0,0);
+}
+
+#garage-ui {
+    position: absolute;
+    top: 50%;
+    left: 2%;
+    transform: translateY(-50%);
+    width: 420px;
+    background: #151515;
+    padding: 20px;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.header {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+#divisions-list { max-height: 400px; overflow-y: auto; }
+.division { margin-bottom: 10px; border-radius: 8px; overflow: hidden; background: #1b1b1b; }
+.division-header { padding: 10px 12px; cursor: pointer; background: #202020; font-weight: 600; border-left: 3px solid #2b2b2b; }
+.division-header.open { background: #232a35; border-left-color: #00b3ff; }
+.division-body { padding: 10px; }
+
+.vehicle {
+    background: #222;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.vehicle:hover {
+    background: #333;
+}
+
+.vehicle.selected {
+    outline: 2px solid #00b3ff;
+    background: #253342;
+}
+
+.actions {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+    margin-top: 12px;
+}
+
+.actions button {
+    background: #00b3ff;
+    color: #fff;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.actions button:disabled {
+    background: #3a3a3a;
+    cursor: not-allowed;
+}
+
+.hint {
+    margin-top: 8px;
+    color: #9aa4ad;
+    font-size: 12px;
+}
+
+.warn {
+    margin-top: 8px;
+    color: #ff6b6b;
+    font-size: 13px;
+}
