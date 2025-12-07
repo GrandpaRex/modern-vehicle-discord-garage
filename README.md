@@ -89,10 +89,6 @@ Each garage:
             - `windowTint` (0..6)
             - `dirtLevel` (0.0..15.0)
 
-Notes:
-- If `divisions` is not provided, the legacy `vehicles` array at the garage level is supported and shown as a single division.
-- Division‑level role gates were removed by design; visibility is driven by whether it has usable vehicles for the player.
-
 #### Example Snippet
 ```lua
 Config.Garages = {
