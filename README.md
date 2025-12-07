@@ -233,7 +233,7 @@ Config.Garages = {
 ### Extending
 - Add more divisions or interactions per garage as needed.
 - Add per‑vehicle liveries/extras/mods/colors to standardize fleet setups.
-- Hook `moderngarage:vehicleSpawned` and `moderngarage:deleted` on the server to integrate with fuel, MDT, or persistence systems.
+- Hook `moderngarage:spawned` and `moderngarage:deleted` on the server to integrate with fuel, MDT, or persistence systems.
 
 ---
 
