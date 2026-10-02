@@ -1,0 +1,116 @@
+body {
+    font-family: Arial;
+    background: rgba(0,0,0,0);
+}
+
+#garage-ui {
+    position: absolute;
+    top: 50%;
+    left: 2%;
+    transform: translateY(-50%);
+    width: 420px;
+    background: #151515;
+    padding: 20px;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.header {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+#divisions-list { max-height: 400px; overflow-y: auto; }
+.division { margin-bottom: 10px; border-radius: 8px; overflow: hidden; background: #1b1b1b; }
+.division-header { padding: 10px 12px; cursor: pointer; background: #202020; font-weight: 600; border-left: 3px solid #2b2b2b; }
+.division-header.open { background: #232a35; border-left-color: #00b3ff; }
+.division-body { padding: 10px; }
+
+.vehicle {
+    background: #222;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.vehicle:hover {
+    background: #333;
+}
+
+.vehicle.selected {
+    outline: 2px solid #00b3ff;
+    background: #253342;
+}
+
+.actions {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+    margin-top: 12px;
+}
+
+.actions button {
+    background: #00b3ff;
+    color: #fff;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.actions button:disabled {
+    background: #3a3a3a;
+    cursor: not-allowed;
+}
+
+.hint {
+    margin-top: 8px;
+    color: #9aa4ad;
+    font-size: 12px;
+}
+
+#customize-ui {
+    position: absolute;
+    top: 50%;
+    right: 2%;
+    transform: translateY(-50%);
+    width: 340px;
+    max-height: 80vh;
+    overflow-y: auto;
+    background: #151515;
+    padding: 20px;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.custom-section { margin-bottom: 14px; }
+.custom-section-title { font-weight: 600; margin-bottom: 8px; padding-left: 8px; border-left: 3px solid #00b3ff; }
+.custom-row { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-bottom: 8px; }
+.custom-row label { color: #cfd6dc; font-size: 13px; }
+.custom-row select {
+    width: 180px;
+    background: #222;
+    color: #fff;
+    border: 1px solid #333;
+    border-radius: 6px;
+    padding: 6px;
+}
+.custom-extras { display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; }
+.custom-extras label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background: #222;
+    padding: 6px 8px;
+    border-radius: 6px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.warn {
+    margin-top: 8px;
+    color: #ff6b6b;
+    font-size: 13px;
+}
